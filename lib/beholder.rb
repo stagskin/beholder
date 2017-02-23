@@ -113,9 +113,8 @@ module Beholder
     exit!
   end
 
-  LOGGER.info "Oauth url: #{BOT.invite_url}+&permissions=#{CONFIG.permissions_code}"
   LOGGER.info 'Use ctrl+c to safely stop the bot.'
-  BOT.run(:async)
+  BOT.run
 
   loop do
     STATS.update

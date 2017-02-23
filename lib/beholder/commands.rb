@@ -8,8 +8,6 @@ module Beholder
       Announce,
       Delete,
       Flip,
-      Invite,
-      Lmgtfy,
       Roll,
       Stats,
       Ping,

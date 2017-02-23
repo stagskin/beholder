@@ -16,17 +16,15 @@ module Beholder
     def setup_config
       @config = {}
 
-      @config[:discord_token] = 'MjQ5NzIyNjkxOTI4NDU3MjE3.C5BBIA.dMtnqjY_rA4dVqR__uBeQHylq6g'
+      @config[:discord_token] = 'MjQ5NzIyNjkxOTI4NDU3MjE3.C5BTCg.Ogc2tSHE9hjFGTZde0n9-UKmmGo'
 
       @config[:discord_client_id] = 249722691928457217
-
-      @config[:google_api_key] = 'AIzaSyCX_uNYG3jkNto9tbBEFtWLj7J17Ham0W0'
 
       @config[:owner_id] = 216213016172036096
 
       @config[:prefix] = ';'
 
-      @config[:permissions_code] = 1304947783
+      @config[:permissions_code] = 2110221431
       save
     end
 
