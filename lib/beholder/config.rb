@@ -1,5 +1,5 @@
 module Beholder
-  # Holds sapphire configuration.
+
   class Config
     include StoreData
 

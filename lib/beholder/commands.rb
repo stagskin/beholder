@@ -13,17 +13,11 @@ module Beholder
       Roll,
       Stats,
       Ping,
-      KickAll,
       About,
       Avatar,
       Eval,
-      Toggle,
-      Set,
-      Default,
       Settings,
       Ignore,
-      Join,
-      Leave,
     ]
 
     def self.include!
