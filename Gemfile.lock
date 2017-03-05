@@ -100,8 +100,10 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.1)
     stringex (1.5.1)
+    table_print (1.5.6)
     terminal-table (1.7.3)
       unicode-display_width (~> 1.1.1)
+    text-table (1.2.4)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
@@ -121,7 +123,9 @@ DEPENDENCIES
   dm-adjust
   dm-sqlite-adapter
   rubocop (~> 0.42.0)
+  table_print
   terminal-table (~> 1.6)
+  text-table
 
 BUNDLED WITH
    1.14.5

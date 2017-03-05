@@ -12,6 +12,7 @@ module Beholder
       Stats,
       Echo,
       Rep,
+      Level,
       Ping,
       About,
       Avatar,

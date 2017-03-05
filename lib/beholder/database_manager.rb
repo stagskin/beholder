@@ -17,7 +17,7 @@ module Beholder
     class Properties
       include DataMapper::Resource
 
-      property :id, Integer, key: true
+      property :id, String, key: true
       property :level, Integer
       property :experience, Integer
       property :reputation, Integer
@@ -27,14 +27,12 @@ module Beholder
       DataMapper.finalize
 
     end
-    class Properties
-      def select_col(attr)
+      def self.select_col(attr)
         return adapter.select("SELECT #{attr}")
       end
 
-      def select_attr(table, col, value)
+      def self.select_attr(table, col, value)
         return adapter.select("SELECT #{col} FROM #{table} WHERE #{col} = #{value}")
       end
-    end
   end
 end
