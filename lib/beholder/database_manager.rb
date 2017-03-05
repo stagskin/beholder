@@ -18,7 +18,7 @@ module Beholder
       include DataMapper::Resource
 
       property :id, Integer, key: true
-      property :level, Integer
+      property :'level.rb', Integer
       property :experience, Integer
       property :reputation, Integer
       property :join_date, Time

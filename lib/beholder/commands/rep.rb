@@ -8,7 +8,7 @@ module Beholder
 
       extend Discordrb::Commands::CommandContainer
       command(:r, usage: ';r [amount] [user]', max_args: 2,
-              description: 'Adds reputation to specified user.') do |event, amount, mention |
+              description: 'Adds reputation to specified user.') do |event, amount, mention|
 
         @discord_user = event.bot.parse_mention(mention)
         case @discord_user

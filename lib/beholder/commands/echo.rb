@@ -16,7 +16,7 @@ module Beholder
         if @discord_user != nil && DatabaseManager::Properties.count(:id => @discord_user) < 1
           @user = DatabaseManager::Properties.first_or_create({:id => @discord_user.id},
                                                               {:id => @discord_user.id,
-                                                               :level => 1,
+                                                               :'level.rb' => 1,
                                                                :experience => 0,
                                                                :reputation => 0,
                                                                :join_date => Time.now.getutc,
@@ -31,7 +31,7 @@ module Beholder
         elsif DatabaseManager::Properties.count(:id => event.author.id) < 1
           @user = DatabaseManager::Properties.first_or_create({:id => event.author.id},
                                                               {:id => event.author.id,
-                                                               :level => 1,
+                                                               :'level.rb' => 1,
                                                                :experience => 0,
                                                                :reputation => 0,
                                                                :join_date => Time.now.getutc,
