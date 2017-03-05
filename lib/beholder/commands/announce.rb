@@ -3,7 +3,7 @@ module Beholder
     # Announces a message server-wide.
     module Announce
       extend Discordrb::Commands::CommandContainer
-      command(:announce, description: 'Announces your text server-wide.',
+      command(:a, description: 'Announces your text server-wide.',
                          min_args: 1, required_permissions: [:manage_messages],
                          usage: 'announce <text>') do |event, *text|
         bot_profile = event.bot.profile.on(event.server)

@@ -6,13 +6,12 @@ module Beholder
 
     @commands = [
       Announce,
-      Delete,
+      Clear,
       Flip,
       Roll,
       Stats,
       Echo,
       Rep,
-      Neg,
       Ping,
       About,
       Avatar,

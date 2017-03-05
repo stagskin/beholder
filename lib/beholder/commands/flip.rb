@@ -3,7 +3,7 @@ module Beholder
     # Flips a coin and displays the result.
     module Flip
       extend Discordrb::Commands::CommandContainer
-      command(:flip, description: 'Fips a coin.') do
+      command(:f, description: 'Fips a coin.') do
         %w(Heads Tails).sample
       end
     end

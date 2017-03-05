@@ -11,7 +11,7 @@ require 'dm-types'
 module Beholder
   module DatabaseManager
 
-    DataMapper.setup(:default, 'sqlite:///home/patrick/Projects/Beholder/lib/data/users.db')
+    DataMapper.setup(:default, 'sqlite:///home/stag/Projects/Beholder/beholder/lib/data/users.db')
 
 
     class Properties
